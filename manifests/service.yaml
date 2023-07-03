@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: SampleWorkflow1
-  namespace: namespace-workflow-1688395556455
+  name: python-webapp
+  namespace: namespace-workflow-1688399390169
 spec:
   type: LoadBalancer
   selector:
-    app: SampleWorkflow1
+    app: python-webapp
   ports:
     - protocol: TCP
-      port: 8000
-      targetPort: 8000
+      port: 8080
+      targetPort: 8080
